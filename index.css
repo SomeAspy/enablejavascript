@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Manrope;
+    src:url("fonts/manrope.eot"); /* IE 9 */
+    src:url("fonts/manrope.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("fonts/manrope.ttf") format("truetype"), /* Almost every other browser */
+        url("fonts/manrope.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+html {
+    font-family: Manrope, sans-serif;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.is-enabled {
+    background-color: #f00;
+    height: 50px;
+}

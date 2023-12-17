@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enable JavaScript</title>
+    <link rel="icon" href="images/JavaScript-logo.ico">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        // This may not work in IE6
+        document.onreadystatechange = function() {
+            if(document.readyState=="complete"){
+                var element = document.getElementById("js-check")
+                element.style.backgroundColor = "#0f0"
+                element.textContent="JavaScript is enabled!"
+                element.style.color="#000"
+            }
+        }
+    </script>
+    <!--Compat Options, This page will probably be loaded a lot on old browsers-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="imagemode" content="force">
+</head>
+
+<html>
+    <h1 class="title" >Enable JavaScript</h1>
+    <h2 class="is-enabled" id="js-check">JavaScript is NOT enabled!</h2>
+</html>
